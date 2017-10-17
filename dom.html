@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fonction</title>
+		<script src="js/dom.js"></script>
+		<style type="text/css">
+			#d {
+				width: 300px;
+				height: 300px;
+				background: yellow;
+				border: 2px red solid;
+			}
+		</style>
+	</head>
+	<body>
+		<form name="f" id="form">
+			<input type="text" id="i1" onfocus="grisBg(this.id);" onblur="blancBg(this.id);">
+			<input type="text" id="i2" onfocus="grisBg(this.id);" onblur="blancBg(this.id);">
+			<input type="text" id="i3" onfocus="grisBg(this.id);" onblur="blancBg(this.id);">
+		</form>
+
+		<a href="javascript:deplacement('100px');">100px</a>
+		<a href="javascript:deplacement('500px');">500px</a><br>
+		<div id="d">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+
+		<img src="image/chat1.jpg" id="image" onclick="chgImage();">
+
+		<form name="f2" id="form2">
+			<input type="radio" name="mrmme" checked onclick="check();">Mr
+			<input type="radio" name="mrmme" onclick="check();">Mme<br>
+			<div id="divNomFille" style="display:none">
+				Nom de jeune fille : <input type="text" name="nom" >
+			</div>
+		</form>
+
+		<p class="rouge">Texte 1</p>
+		<p>Texte 2</p>
+		<p class="rouge">Texte 3</p>
+
+		<script>
+			var el = document.getElementsByClassName("rouge");
+			for (var i in el){
+				el[i].style.color = 'red';
+			}
+		</script>
+	</body>
+</html>
