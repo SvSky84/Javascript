@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fonction</title>
+		<script src="js/thisEvent.js"></script>
+		<style type="text/css">
+			div {
+				width: 200px;
+				height: 200px;
+				border: 1px black solid;
+				display: inline-block;
+				vertical-align: top;
+				overflow: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div onclick="traitement(this);" style="background: lightgreen;"></div>
+
+		<img src="image/chat1.jpg" id="image" onmousemove="coordImage(event, this);">
+		<br>
+		<span id="xy"></span>
+
+		<div contenteditable="true" onkeypress="majuscule(event);"></div>
+		<div id="divMaj" onmouseover="survolColor(this, 'red');" onmouseout="survolColor(this, 'white');"></div>
+
+		<img src="image/chat1.jpg" onmouseover="dimImage(this, '500px');" onmouseout="dimImage(this, '');">
+
+		<script>
+
+		</script>
+	</body>
+</html>
