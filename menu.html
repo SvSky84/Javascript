@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fonction</title>
+		<script src="js/menu.js"></script>
+		<style type="text/css">
+			#horizontal{
+				list-style-type: none;
+				
+			}
+			#horizontal li{
+				display: inline;
+				padding-right: 2em;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="horizontal">
+			<li><a href="page1.htm">Page 1</a></li>
+			<li><a href="page2.htm">Page 2</a></li>
+			<li><a href="page3.htm">Page 3</a></li>
+			<li><a href="page4.htm">Page 4</a></li>
+			<li><a href="page5.htm">Page 5</a></li>
+		</ul>
+
+		<button onclick="addElement(document.getElementById('horizontal').getElementsByTagName('li').length);">Ajouter une entrée dans le menu</button>
+
+		<script>
+
+		</script>
+	</body>
+</html>
