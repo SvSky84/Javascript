@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<livres>
+<livre>
+<auteur>Pierre Leridan</auteur>
+<editeur>Mediaforma</editeur>
+<titre>XML facile</titre>
+<sujet>Affichage dans un parseur XML</sujet>
+</livre>
+<livre>
+<auteur>Jean Vivier</auteur>
+<editeur>Mediaforma</editeur>
+<titre>HTML dynamique</titre>
+<sujet>Sites dynamiques avec JS</sujet>
+</livre>
+</livres>
