@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fonction</title>
+		<script src="js/xml.js"></script>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<h1>Livres</h1>
+	  	<div id="livre"></div>
+	  	<script>
+		    if (window.XMLHttpRequest) { 
+		      // code pour IE7+, Firefox, Chrome, Opera, Safari
+		      var xmlhttp=new XMLHttpRequest();
+		    }
+		    else {
+		      // code pour IE6, IE5
+		      var xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		    }
+		    xmlhttp.open("GET","livre.xml",false); // Contact de livres.xml et GET et en synchrone
+		    xmlhttp.send();
+		    var xmlDoc=xmlhttp.responseXML;
+		    var rendu='';
+		    for (i=0;i<=1;i++){
+		      rendu+='<b>Auteur</b> : ' + xmlDoc.getElementsByTagName("auteur")[i].childNodes[0].nodeValue
+		           +'<br><b>Editeur</b> : ' + xmlDoc.getElementsByTagName("editeur")[i].childNodes[0].nodeValue
+		           +'<br><b>Sujet</b> : ' + xmlDoc.getElementsByTagName("sujet")[i].childNodes[0].nodeValue +'<br><br>';
+		    }
+		    document.getElementById("livre").innerHTML = rendu;
+	  	</script>
+	</body>
+</html>
