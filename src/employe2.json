@@ -1,0 +1,22 @@
+[
+	{
+		"Prenom":"John",
+		"Nom":"Doe",
+		"Age":"25"
+	},
+	{
+		"Prenom":"Abraham",
+		"Nom":"Lincoln",
+		"Age":"RIP"
+	},
+	{
+		"Prenom":"Sarah",
+		"Nom":"Connor",
+		"Age":"Still Alive"
+	},
+	{
+		"Prenom":"Thomas",
+		"Nom":" A. Anderson",
+		"Age":"I'm in"
+	}
+]
